@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>Css specitiy andsemantic html</title>
+            <style>
+                  body{
+                        margin-left: 20%;
+                  }
+                   
+                  .myclass{
+                        color: peru;
+                  }
+                  
+                  #myid{
+                        color: blueviolet;
+                  }
+                  p{
+                        color: red!important;
+                  }
+                 .box{
+                 
+                  width: 400px;
+                  height: 400px;
+                  padding: 16px;
+                  background: #000;
+                 }
+                 .child{
+                  box-sizing:border-box;
+                  width: 100%;
+                  background: rgb(211, 168, 175);
+                  position: relative;
+                  left: 20px;
+                  bottom: -20px;
+                 }
+                 P::after{
+                         content:'💕';
+                        color:red;
+                 }
+                
+
+                 p.absolute
+                 {position: absolute;
+                 top:50%;
+                  right:20%;
+                  
+                 }
+                 section{
+                  position: relative;
+                  border: 1px solid black;
+                 
+                  width: 300px;
+                  height: 200px;
+                 }
+                 strong{
+                  position: relative;
+                  top:10px;
+                  color: rgb(24, 24, 61);
+
+                 }
+                  
+            </style>
+      </head>
+      <body>
+<p style="color:orange ;" id="myid" class="myclass" >hi my name is anisha mishra</p>
+     
+<div class="box">
+<div class="box child">
+      </div></div>
+      <p style="position:relative; right:-119px;">hi this is me</p>
+      <p> i am a <strong>good</strong> girl</p>
+      <br>
+      <br>
+      <section>
+            <p
+            class="absolute">this is my website</p>
+            
+      </section>
+      <p title="about " w3school ></p>
+
+</body>
+</html>
