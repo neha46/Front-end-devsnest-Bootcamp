@@ -1,0 +1,43 @@
+body{
+      font-size: 2.5rem;
+}
+
+
+/* for showing(printing) chnages in media */
+@media print{
+      body{
+            background: #000;
+            color: white;
+      }
+}
+
+/* for media  screen changes */
+@media screen  and (orientation:portrait){
+      body::after{
+            content: "portrait";
+      }     
+}
+@media screen  and (orientation:landscape){
+      body::after{
+            content: "Landscape";
+      }     
+}
+
+/* media chnages for diff devices  */
+@media(max-width:400px)
+{
+      body{
+            background-color:rgb(29, 212, 157);
+      }
+}
+@media(min-width:1000px)
+{
+      body{
+            background-color:rgb(212, 29, 197);
+      }
+}
+
+
+
+
+

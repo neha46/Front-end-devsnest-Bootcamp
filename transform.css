@@ -1,0 +1,69 @@
+body{
+      padding: 16px;
+}
+.box{
+      height: 300px;
+      width:300px;
+
+      margin:32px auto ;
+      transition-property:transform;
+      transition-duration: 0.5s;
+       transition-delay: 1000ms;
+      transition: transform 0.5s,0.4s cubic-bezier(0.24, -0.23, 0.58, 1);
+   animation: rotation 0.9s 10 alternate;
+}
+
+/* .box:hover{
+      scale: 2;
+
+} */
+
+@keyframes rotation {
+      0%{
+            transform:rotate(0);
+
+}
+25%{
+      transform:rotate(45deg);
+
+}
+50%{
+      transform:rotate(90deg);
+
+}
+75%{
+      transform:rotate(180deg);
+}
+100%{
+      transform:rotate(360deg);
+}
+}
+/* for flexbox----------------------> */
+.box2.second{
+      /* flex-basis: 400px; */
+      /* flex-grow: 1;
+      flex-shrink: ; */
+      flex: 2 0 200px;
+}
+box2.third{
+     
+      flex: 1 1 100px;
+}
+.box2{
+      height: 300px;
+      width: 100px;
+      background-color: rgb(128, 110, 110);
+      border: 1px solid black;
+      /* margin: 10px auto; */
+}
+
+.container{
+display:flex;
+height:600px;
+      /* flex-direction: column; */
+      /* overflow: hidden; */
+      flex-wrap:wrap ;
+      gap: 16px;
+justify-content:center;
+align-items:center;
+}

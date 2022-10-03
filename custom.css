@@ -1,0 +1,23 @@
+/* custom properties */
+body{
+     
+      --text-align:center;
+      --fontsize:32px;
+      background-color: var(--background-color);
+}
+:root{
+      --background-color: rgb(192, 183, 183);
+      --textcolor:black;
+      text-align: var(--text-align);
+      font-size: var(--fontsize);
+}
+h1{
+      color:var(--textcolor);
+}
+
+@media(prefers-color-scheme:dark){
+      body{
+            --background-color: rgb(44, 40, 40);
+            --textcolor:rgb(231, 226, 226);
+      }
+}
